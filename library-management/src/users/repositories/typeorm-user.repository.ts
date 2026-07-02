@@ -6,7 +6,7 @@ import { User } from '../entities/user.entity';
 import { IUserRepository } from '../interfaces/user-repository.interface';
 
 @Injectable()
-export class UserRepository implements IUserRepository {
+export class TypeOrmUserRepository implements IUserRepository {
   constructor(
     @InjectRepository(User)
     private readonly repository: Repository<User>,
